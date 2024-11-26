@@ -69,27 +69,6 @@ You can modify these variables in the script:
 - `output_dir`: Directory for downloaded snapshots (default: "downloads")
 - `log_file`: Path to the download log file (default: "downloaded_urls.log")
 
-## Functions
-
-### `fetch_all_wayback_snapshots(url)`
-Retrieves all available snapshots for a given URL from the Wayback Machine.
-
-### `calculate_hash(content)`
-Generates a SHA256 hash of the content to identify unique snapshots.
-
-### `extract_extension(snapshot_url, content_type)`
-Determines the appropriate file extension based on URL or content type.
-
-### `download_snapshot(snapshot_url, output_dir, timestamp, seen_hashes, log_file)`
-Downloads a snapshot and saves it with a unique filename based on timestamp and content hash.
-
-## Error Handling
-
-The script includes comprehensive error handling for:
-- Connection failures (both HTTPS and HTTP)
-- Request timeouts
-- Invalid responses
-- File system operations
 
 ## Contributing
 
